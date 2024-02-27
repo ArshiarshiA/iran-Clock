@@ -50,3 +50,10 @@ body{
     border: 2px solid red;
     border-radius: 5px;
 }
+.hour::before{
+    content: '';
+    width: 3px;
+    height: 140px;
+    border: 2px solid rgb(196, 196, 196);
+    border-radius: 5px;
+}
