@@ -68,6 +68,7 @@ body{
     justify-content: center;
 }
 .hclock{
+    user-select: none;
     color: white;
     font-size: 40px;
     border: 1px solid rgba(2, 162, 255, 0.623);
