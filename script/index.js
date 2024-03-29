@@ -18,3 +18,6 @@ setInterval(() => {
     minute.style.transform = `rotateZ(${minuteNow}deg)`;
     hour.style.transform = `rotateZ(${hourNow}deg)`;
 }, 1000);
+
+let Time = new persianDate();
+console.log(Time.format('hh-mm-ss'));
