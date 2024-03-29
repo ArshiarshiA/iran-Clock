@@ -2,7 +2,18 @@
 let second = document.querySelector('.second');
 let minute = document.querySelector('.minute');
 let hour = document.querySelector('.hour');
+let Analog0 = document.querySelectorAll('.hclock')[0]; 
+let Analog1 = document.querySelectorAll('.hclock')[1]; 
+let Analog2 = document.querySelectorAll('.hclock')[2]; 
 let deg = 6;
+
+setInterval(() => {
+    let PerT = new persianDate();
+    Analog0.innerHTML = PerT.format('hh');    
+    Analog1.innerHTML = PerT.format('mm');    
+    Analog2.innerHTML = PerT.format('ss');    
+}, 1000);
+
 
 setInterval(() => {
     /* take a now time and save it in var
@@ -18,6 +29,3 @@ setInterval(() => {
     minute.style.transform = `rotateZ(${minuteNow}deg)`;
     hour.style.transform = `rotateZ(${hourNow}deg)`;
 }, 1000);
-
-let Time = new persianDate();
-console.log(Time.format('hh-mm-ss'));
